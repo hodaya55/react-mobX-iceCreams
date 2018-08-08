@@ -14,7 +14,7 @@ class App extends Component {
         <IceCreamForm />
         <ul>
           {this.props.store.iceCreams.map((iceCream, i) =>
-            <IcecreamView i={i} {...iceCream} key={i} />
+            <IcecreamView i={i} {...iceCream} key={iceCream.color + i} />
           )}
         </ul>
       </div>
