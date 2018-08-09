@@ -8,7 +8,7 @@ export default class IcecreamView extends Component {
   render() {
     const { i, flavor, color } = this.props;
     return (
-      <div >
+      <div className="ice">
         flavor: <InlineEdit text={flavor} onFocusOut={(data) => {
           this.props.store.updateIce(data, i, "flavor");
         }} />
@@ -17,9 +17,10 @@ export default class IcecreamView extends Component {
         }} />
         <input type="button" onClick={() => {
           this.props.store.deleteIce(i);
-        }} value="Delete" />
-
+        }} value="X" />
       </div>
     )
   }
 }
+
+

@@ -1,0 +1,27 @@
+$back1: rgb(66, 50, 209);
+$back3: rgb(220, 214, 48);
+$back2: blue;
+html {
+  background: $back1;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.ice {
+  margin-top: 10px;
+  background: $back3;
+  width: 25%;
+  display: inline-block;
+  margin: 30px;
+  &:hover {
+    background: lighten($back1, 6);
+    color: #fff;
+  }
+}
+
+.container {
+  margin-top: 60px;
+}

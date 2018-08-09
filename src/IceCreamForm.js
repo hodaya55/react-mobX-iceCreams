@@ -13,21 +13,20 @@ export default class IceCreamForm extends Component {
     this.iceCream[e.target.name] = e.target.value;
   }
   submitForm = (e) => {
-    // if (this.iceCream.flavor === "" || this.iceCream.color === "")
-    //   return;
+    e.preventDefault();
     this.props.addIceCream(this.iceCream.flavor, this.iceCream.color);
     this.iceCream = { flavor: "", color: "" };
   }
   render() {
     return (
-      <form className="container">
+      <form className="container" onSubmit={this.submitForm} >
         <input type="text" name="flavor" placeholder="flavor"
           // required
           onChange={this.inputChange} value={this.iceCream.flavor} />
         <input type="text" name="color" placeholder="color"
-          //  required
+          // required
           onChange={this.inputChange} value={this.iceCream.color} />
-        <button type="button" onClick={this.submitForm} >Submit</button>
+        <button type="submit" >Submit</button>
       </form>);
   }
 }

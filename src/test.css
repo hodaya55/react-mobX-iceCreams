@@ -1,0 +1,26 @@
+html {
+  background: #4232d1;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.ice {
+  margin-top: 10px;
+  background: #dcd630;
+  width: 25%;
+  display: inline-block;
+  margin: 30px;
+}
+
+.ice:hover {
+  background: #594bd7;
+  color: #fff;
+}
+
+.container {
+  margin-top: 60px;
+}
+/*# sourceMappingURL=test.css.map */

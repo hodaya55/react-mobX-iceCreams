@@ -10,6 +10,7 @@ class IceCreamStore {
   @action deleteIce = (index) => {
     console.log('delete', index);
     this.iceCreams.splice(index, 1);
+    // this.iceCreams = this.iceCreams.filter((ice, i) => i !== index ? ice : false);
   }
 
   @action updateIce = (data, index, prop) => {
